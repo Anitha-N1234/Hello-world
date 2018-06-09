@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amma Hover effects</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+	  .wrapper{width: 100%;background: #ccc;padding: 40px 0}	
+	  .container{width: 90%;margin: auto;}
+	   .contact{display: inline-block;float: left;margin-left: 35px;}
+	 
+.cf{clear: :both;
+content: "";display: table;}
+.button,
+.button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 25px 35px;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.button::before,
+.button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.button:hover {
+  color: #2ecc71;
+  z-index: 8;
+  text-decoration: none;
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1:hover:after {
+  height: 100%;
+}
+.btn-2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+}
+.btn-3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.btn-4::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-4::after {
+  background: #2ecc71;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-4:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  /*background-color: #f00;*/
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
+.btn-6:before{
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+.btn-6:after{
+ width: 100%;
+ height: 0;
+ bottom: 0;
+ left: 0;
+}
+.btn-6:hover:before{
+ height: 50%;
+ top:50%;
+}
+.btn-6:hover:after{
+ height: 50%;
+ bottom:50%;
+}
+.btn-7:before {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.btn-7:before, .btn-7:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0c1d14;
+   
+}
+.btn-7:hover:before {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.btn-7:hover:after {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+.btn-7:after {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.btn-8:before {
+    right: -50px;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #600644;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.btn-8:before, .btn-8:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.btn-8:after {
+    left: -50px;
+    border-left: 50px solid transparent;
+    border-top: 80px solid #600644;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.btn-8:before, .btn-8:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.btn-8:hover:after {
+    -webkit-transform: translateX(49%);
+    transform: translateX(49%);
+}
+.btn-8:hover:before {
+    -webkit-transform: translateX(-49%);
+    transform: translateX(-49%);
+}
+.btn-8:after {
+    left: -50px;
+    border-left: 50px solid transparent;
+    border-top: 80px solid #600644;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+	</style>
+</head>
+<body>
+  <div class="wrapper cf">	
+    <div class="container">
+      <div class="contact ">
+        <a  class="button btn-1" href="javascript:;">Contact Us</a>
+      </div>
+      <div class="contact">
+        <a class="button btn-2" href="javascript:;">Contact Us</a>
+      </div>
+      <div class="contact">
+        <a class="button btn-3" href="javascript:;">Contact Us</a>
+      </div>
+      <div class="contact">
+        <a class="button btn-4" href="javascript:;">Contact Us</a>
+      </div>
+      <div class="contact">
+        <a class="button btn-5" href="javascript:;">Contact Us</a>
+      </div>
+      <div class="contact">
+        <a class="button btn-6" href="javascript:;">Contact Us</a>
+      </div>
+      <div class="contact">
+        <a class="button btn-7" href="javascript:;">Contact Us</a>
+      </div>
+      <div class="contact">
+        <a class="button btn-8" href="javascript:;">Contact Us</a>
+      </div>
+   </div>
+</div>
+</body>
+</html>
